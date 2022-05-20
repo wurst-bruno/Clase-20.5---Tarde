@@ -42,6 +42,10 @@ public class prefabcloner : MonoBehaviour
                 counter++;
                 displayClonesLeft.text = (int.Parse(inputCloneAmount.text) - counter).ToString();
             }
+            else
+            {
+                displayClonesLeft.text = "No hay más";
+            }
         }
         else
         {
